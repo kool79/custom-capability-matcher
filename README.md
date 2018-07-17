@@ -36,8 +36,7 @@ _It will be placed in the target folder_
   $ mvn test
 ```
 Change this [line](https://github.com/diemol/custom-capability-matcher/blob/master/src/test/java/SampleCapabilityMatcherTest.java#L17) to see the matcher in action by:
-* Either setting `nodeName` capability to `foo` or `bar` and see the test getting executed in the desired node.
-* Removing the `nodeName` capability and letting the `DefaultCapabilityMatcher` decide.
+* Either setting `deviceName` capability to `S6` or `NEXUS` and see the test getting executed in the desired node.
 * Or setting `nodeName` to a different value and seeing the Grid reject the request because no node matches the capabilities.
 
 
