@@ -13,8 +13,8 @@ public class SampleCapabilityMatcherTest {
     @Test
     public void simpleTest() throws MalformedURLException, InterruptedException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
-        // desiredCapabilities.setCapability("nodeName", "bar");
+        //desiredCapabilities.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
+        desiredCapabilities.setCapability("deviceName", "S6");
 
         WebDriver webDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities);
         webDriver.get("http://www.google.com");

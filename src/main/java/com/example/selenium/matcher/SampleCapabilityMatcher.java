@@ -1,7 +1,6 @@
 package com.example.selenium.matcher;
 
 import org.openqa.grid.internal.utils.DefaultCapabilityMatcher;
-
 import java.util.Map;
 
 public class SampleCapabilityMatcher extends DefaultCapabilityMatcher {

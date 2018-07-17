@@ -4,7 +4,7 @@
   "newSessionWaitTimeout": -1,
   "servlets" : [],
   "prioritizer": null,
-  "capabilityMatcher": "com.example.selenium.matcher.SampleCapabilityMatcher",
+  "capabilityMatcher": "com.example.selenium.matcher.MobileCapabilityMatcher",
   "throwOnCapabilityNotPresent": true,
   "nodePolling": 5000,
 

@@ -5,7 +5,8 @@
       "browserName": "firefox",
       "maxInstances": 1,
       "seleniumProtocol": "WebDriver",
-      "nodeName": "foo"
+      "nodeName": "foo",
+      "deviceName": "NEXUS"
     }
   ],
   "configuration":

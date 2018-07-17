@@ -5,7 +5,8 @@
       "browserName": "firefox",
       "maxInstances": 1,
       "seleniumProtocol": "WebDriver",
-      "nodeName": "bar"
+      "nodeName": "bar",
+      "deviceName":"S6"
     }
   ],
   "configuration":
