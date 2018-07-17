@@ -17,7 +17,7 @@ _It will be placed in the target folder_
 1. Start the hub with a the specific configuration
 
   ```
-    $ java -cp selenium-server-standalone-2.53.0.jar:target/custom-capability-matcher-1.0-SNAPSHOT.jar org.openqa.grid.selenium.GridLauncher -role hub -hubConfig src/main/resources/hubConfig.json
+    $ java -cp selenium-server-standalone-3.13.0.jar;custom-capability-matcher-1.0-SNAPSHOT.jar; org.openqa.grid.selenium.GridLauncherV3 -capabilityMatcher com.example.selenium.matcher.MobileCapabilityMatcher -role hub -debug -hubConfig hubConfig.json
   ```
 1. Start the `foo` node
 
@@ -27,7 +27,7 @@ _It will be placed in the target folder_
 1. Start the `bar` node
 
   ```
-    $ java -jar selenium-server-standalone-2.53.0.jar -role node -hub http://localhost:4444/grid/register -nodeConfig src/main/resources/nodeConfig_bar.json
+    $ java -cp selenium-server-standalone-3.13.0.jar;custom-capability-matcher-1.0-SNAPSHOT.jar; org.openqa.grid.selenium.GridLauncherV3  -role node -hub http://localhost:4444/grid/register -debug -nodeConfig nodeConfig_foo.json
   ```
   
 ## Run the test 
