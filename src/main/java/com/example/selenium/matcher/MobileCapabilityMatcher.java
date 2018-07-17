@@ -22,15 +22,11 @@ public class MobileCapabilityMatcher extends DefaultCapabilityMatcher {
 			LOG.info("Mobile request received! deviceName capability it's present.");
 			LOG.info("************************************************************************************");
 			LOG.info("NODE CAPABILITY:" + nodeCapability.size());
-			nodeCapability.forEach((key, value) -> {
-				LOG.info("Key : " + key + " Value : " + value);
-			});
+			
 			LOG.info("######### END");
 
 			LOG.info("REQUESTED CAPABILITY:" + requestedCapability.size());
-			requestedCapability.forEach((key, value) -> {
-				LOG.info("Key : " + key + " Value : " + value);
-			});
+			
 			LOG.info("######### END");
 			LOG.info("************************************************************************************");
 			
