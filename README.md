@@ -1,6 +1,7 @@
 # Custom Capability Matcher
 Example that shows how to implement a Selenium Grid capability matcher updated to latest version of Selenium Server (old implementation of a tutorial that can be
 found [here](https://rationaleemotions.wordpress.com/2014/01/19/working-with-a-custom-capability-matcher-in-the-grid/)).
+With this matcher you can use the hub for Appium Node and choose a node based on deviceName capability.
 
 ## How to generate the jar
 _It will be placed in the target folder_
@@ -19,12 +20,12 @@ _It will be placed in the target folder_
   ```
     $ java -cp selenium-server-standalone-3.13.0.jar;custom-capability-matcher-1.0-SNAPSHOT.jar; org.openqa.grid.selenium.GridLauncherV3 -capabilityMatcher com.example.selenium.matcher.MobileCapabilityMatcher -role hub -debug -hubConfig hubConfig.json
   ```
-1. Start the `foo` node
+1. Start the `foo` node for S6 mobile phone
 
   ```
     $ java -jar selenium-server-standalone-2.53.0.jar -role node -hub http://localhost:4444/grid/register -nodeConfig src/main/resources/nodeConfig_foo.json
   ```
-1. Start the `bar` node
+1. Start the `bar` node for Nexus phone
 
   ```
     $ java -cp selenium-server-standalone-3.13.0.jar;custom-capability-matcher-1.0-SNAPSHOT.jar; org.openqa.grid.selenium.GridLauncherV3  -role node -hub http://localhost:4444/grid/register -debug -nodeConfig nodeConfig_foo.json
